@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity_Game"
+    android:orientation="vertical"
+    android:background="#010B1C"
+
+    >
+    <ImageView
+        android:id="@+id/game_IMG_background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        />
+
+
+
+
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="95dp"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+
+        >
+
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/game_BTN_play"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:icon="@drawable/icon_play"
+            app:iconSize="15dp"
+            app:iconGravity="textStart"
+            app:iconTint="@color/black"
+            android:layout_margin="5dp"
+            android:backgroundTint="#45B1A1"
+            app:shapeAppearanceOverlay="@style/ShapeAppearance.Material3.Corner.Full"
+            />
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/game_BTN_pause"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:iconSize="15dp"
+            app:iconTint="@color/black"
+            android:textSize="15dp"
+            android:textAlignment="center"
+            app:icon="@drawable/icon_pause"
+            app:iconGravity="textStart"
+            android:layout_margin="5dp"
+            android:backgroundTint="#45B1A1"
+            app:shapeAppearanceOverlay="@style/ShapeAppearance.Material3.Corner.Full"
+            />
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:layout_alignParentRight="true"
+        android:padding="5dp"
+        android:layout_marginTop="5dp"
+        >
+
+
+
+         <com.google.android.material.imageview.ShapeableImageView
+             android:id="@+id/game_IMG_heart1"
+             android:layout_width="0dp"
+             android:layout_height="match_parent"
+             android:layout_weight="1"
+             app:srcCompat="@drawable/icon_heart"
+
+         />
+         <com.google.android.material.imageview.ShapeableImageView
+             android:id="@+id/game_IMG_heart2"
+             android:layout_width="0dp"
+             android:layout_height="match_parent"
+             android:layout_weight="1"
+             app:srcCompat="@drawable/icon_heart"
+
+             />
+         <com.google.android.material.imageview.ShapeableImageView
+             android:id="@+id/game_IMG_heart3"
+             android:layout_width="0dp"
+             android:layout_height="match_parent"
+             android:layout_weight="1"
+             app:srcCompat="@drawable/icon_heart"
+
+             />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            />
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/game_LNR_top"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+
+            >
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/game_IMG_bord00"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:padding="20dp"
+                app:srcCompat="@drawable/img_rock"/>
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/game_IMG_bord01"
+                android:layout_width="0dp"
+                android:padding="20dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/game_IMG_bord02"
+                android:layout_width="0dp"
+                android:padding="20dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/game_LNR_center"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+
+            >
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/game_IMG_bord10"
+                android:layout_width="0dp"
+                android:padding="20dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/game_IMG_bord11"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:padding="20dp"
+                android:layout_weight="1" />
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/game_IMG_bord12"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:padding="20dp"
+
+                />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/game_LNR_2"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+
+                >
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/game_IMG_bord20"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:padding="20dp"/>
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/game_IMG_bord21"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:padding="20dp"
+                    />
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/game_IMG_bord22"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:padding="20dp"
+                    />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/game_LNR_3"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+
+            >
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/game_IMG_bord30"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:padding="20dp"/>
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/game_IMG_bord31"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:padding="20dp"
+                />
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/game_IMG_bord32"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:padding="20dp"
+                />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/game_LNR_playerbord"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+
+            >
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/game_IMG_player00"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:padding="20dp"/>
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/game_IMG_player01"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:padding="20dp"
+                />
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/game_IMG_player02"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:padding="20dp"/>
+
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+
+
+
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:padding="20dp"
+
+
+        >
+        <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+            android:id="@+id/game_BTN_leftbtn"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:padding="20dp"
+            android:layout_alignParentLeft="true"
+            app:icon="@drawable/icon_left"
+            app:iconSize="30dp"
+
+            />
+        <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+            android:id="@+id/game_BTN_rightbtn"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:padding="20dp"
+            android:layout_alignParentRight="true"
+            app:icon="@drawable/icon_right"
+            app:iconSize="30dp"
+
+
+
+            />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/game_RTL_start"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#99F1E6E6"
+        android:gravity="center"
+        android:visibility="invisible">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/game_BTN_start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#73D6DF"
+            android:padding="30dp"
+            android:text="start"
+            android:textColor="@color/black"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            app:cornerRadius="50dp" />
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

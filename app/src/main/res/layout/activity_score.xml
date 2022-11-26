@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity_Score"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="#072063"
+    >
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="GAME OVER"
+        android:textSize="50sp"
+        android:layout_margin="20dp"
+        android:textColor="#ffffff"
+        />
+    <TextView
+        android:id="@+id/score_LBL_score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Score: "
+        android:textSize="30sp"
+        android:textColor="#ffffff"
+/>
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/score_BTN_playagain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="play again"
+        android:padding="20dp"
+        android:layout_margin="20dp"
+        app:shapeAppearanceOverlay="@style/ShapeAppearance.Material3.Corner.Full"
+        app:backgroundTint="#C479EC"
+        android:textSize="20sp"
+        />
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>
