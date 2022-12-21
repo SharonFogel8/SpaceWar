@@ -7,35 +7,63 @@
     tools:context=".Activity_Score"
     android:gravity="center"
     android:orientation="vertical"
-    android:background="#072063"
+    android:background="@drawable/space"
     >
     <TextView
 
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="GAME OVER"
+        android:text=" GAME OVER "
+        android:fontFamily="@font/fastupbold"
         android:textSize="50sp"
-        android:layout_margin="20dp"
-        android:textColor="#ffffff"
+        android:layout_margin="30dp"
+        android:textColor="#E3DDDD"
         />
     <TextView
         android:id="@+id/score_LBL_score"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Score: "
-        android:textSize="30sp"
-        android:textColor="#ffffff"
-/>
+        android:text=" Score: "
+        android:textStyle="bold"
+        android:textSize="35sp"
+        android:textColor="#E3DDDD"
+        android:layout_marginTop="10dp"
+        />
+
+    <EditText
+        android:id="@+id/score_ETXT_name"
+        android:layout_width="180dp"
+        android:layout_height="45dp"
+        android:background="#A5A5A5"
+        android:text="Name"
+        android:layout_margin="10dp"
+        android:textSize="18sp"
+        android:padding="10dp"
+        />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/score_BTN_save"
+        android:layout_width="180dp"
+        android:layout_height="60dp"
+        android:text="save "
+        android:layout_margin="10dp"
+        app:shapeAppearanceOverlay="@style/ShapeAppearance.Material3.Corner.Full"
+        app:backgroundTint="#E3DDDD"
+        android:textSize="20sp"
+        android:textColor="#000000"
+        android:fontFamily="@font/fastupregular"
+        />
     <com.google.android.material.button.MaterialButton
         android:id="@+id/score_BTN_playagain"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="play again"
-        android:padding="20dp"
-        android:layout_margin="20dp"
+        android:layout_width="180dp"
+        android:layout_height="60dp"
+        android:text="menu "
+        android:layout_margin="40dp"
         app:shapeAppearanceOverlay="@style/ShapeAppearance.Material3.Corner.Full"
-        app:backgroundTint="#C479EC"
-        android:textSize="20sp"
+        app:backgroundTint="#B67B9D"
+        android:textSize="22sp"
+        android:textColor="#000000"
+        android:fontFamily="@font/fastupregular"
         />
 
 

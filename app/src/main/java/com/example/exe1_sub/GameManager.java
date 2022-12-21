@@ -23,6 +23,14 @@ public class GameManager {
         }
         return -1;
     }
+    public int findCoinCol(int row){
+        for (int i = 0; i < cols; i++) {
+            if (bord[row][i] instanceof Coins){
+                return i;
+            }
+        }
+        return -1;
+    }
     public void nextStep(){
         for (int i = rows-1; i >= 0; i--) {
             for (int j = cols-1; j >=0; j--) {
@@ -32,13 +40,27 @@ public class GameManager {
                         bord[i + 1][j] = bord[i][j];
                     }
                     bord[i][j]=null;
-       //             if(i==rows-1)
-         //               isCrashed(((Enemy) bord[i][j]));
+                }
+                else if(bord[i][j] instanceof Coins){
+                    ((Coins) bord[i][j]).move();
+                    if(i<rows-1) {
+                        bord[i + 1][j] = bord[i][j];
+                    }
+                    bord[i][j]=null;
                 }
             }
         }
+        newCoin();
         newEnemy();
     }
+    public boolean isSucceededCoin(){
+        int coinCol=findCoinCol(rows-1);
+        if(coinCol>=0 && coinCol == player.col) {
+            return true;
+        }
+        return false;
+    }
+
 
     public boolean isCrashed() {
         int enemyCol=findEnemyCol(rows-1);
@@ -62,6 +84,20 @@ public class GameManager {
     public void newEnemy() {
         int col= (int)(Math.random()*cols);
         bord[0][col]= new Enemy(rows,cols,col);
+    }
+    public void newCoin() {
+        int temp = (int) (Math.random() * 3);
+        if(temp!=1){
+            return;
+        }
+        else {
+            int col;
+            do {
+                col = (int) (Math.random() * cols);
+            } while (bord[0][col] instanceof Enemy);
+
+            bord[0][col] = new Coins(rows, cols, col);
+        }
     }
 
     public Player getPlayer() {

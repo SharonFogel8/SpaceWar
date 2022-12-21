@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Menu_Activity"
+    android:background="@drawable/space"
+    >
+<com.google.android.material.textview.MaterialTextView
+    android:id="@+id/menu_LBL_title"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:fontFamily="@font/fastupregular"
+    android:text="SPACE WAR "
+    android:textColor="#F2E9FA"
+    android:textSize="55sp"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="70dp"
+    />
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="180dp"
+        android:orientation="vertical">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/menu_BTN_arrowsSlow"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="#D9CBE6"
+            android:text="arrows mode- slow "
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:fontFamily="@font/fastupregular"
+            app:shapeAppearanceOverlay="@style/ShapeAppearance.Material3.Corner.Full" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/menu_BTN_arrowsFast"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="#D9CBE6"
+            android:text="arrows mode- fast"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:fontFamily="@font/fastupregular"
+            app:shapeAppearanceOverlay="@style/ShapeAppearance.Material3.Corner.Full" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/menu_BTN_playsensors"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="#D9CBE6"
+            android:text="sensors mode"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:fontFamily="@font/fastupregular"
+            app:shapeAppearanceOverlay="@style/ShapeAppearance.Material3.Corner.Full" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/menu_BTN_top10"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginTop="50dp"
+            android:backgroundTint="#644E78"
+            android:text="top ten"
+            android:textColor="#D9CBE6"
+            android:textSize="20sp"
+            android:fontFamily="@font/fastupregular"
+            app:shapeAppearanceOverlay="@style/ShapeAppearance.Material3.Corner.Full" />
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+
+</RelativeLayout>

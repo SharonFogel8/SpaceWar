@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RecordsActivity"
+    android:background="@drawable/space"
+    android:orientation="vertical"
+    android:gravity="center"
+    >
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/records_BTN_back"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:icon="@drawable/icon_left"
+        android:textSize="20sp"
+        android:background="#08FFFFFF"
+
+        />
+
+
+    <ScrollView
+        android:layout_width="300dp"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:background="#80894A6C"
+        android:layout_margin="15dp"
+        >
+        <FrameLayout
+            android:id="@+id/records_LAY_top10"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+        </FrameLayout>
+    </ScrollView>
+
+
+    <FrameLayout
+        android:layout_margin="15dp"
+        android:id="@+id/records_LAY_maps"
+        android:layout_width="300dp"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="#8B265E17"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+
+    </FrameLayout>
+
+</androidx.appcompat.widget.LinearLayoutCompat>
